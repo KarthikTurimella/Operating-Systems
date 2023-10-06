@@ -1,0 +1,33 @@
+1. 
+Beginning of program binary = 0x400000
+End of program binary = 0x407FFF
+Beginning of stack space = 0x40AFFF
+End of stack space = 0x408000
+Beginnng of TSS = 0x40BFFF
+End of TSS = 0x40B000
+Total size (number of bytes) of process  = 0x4800
+
+2.
+a. Entry 3:
+    base_0_15 = 0x0000
+    base_16_23 = 0x40
+    base_24_31 = 0x00
+    limit_0_15 = 0x4800
+    limit_and_flag = 0x40
+    access_byte = 0xFA
+    full GDT entry in hex = 0x4800000080FA4000
+
+b. Entry 4:
+    base_0_15 = 0x0000
+    base_16_23 = 0x40
+    base_24_31 = 0x00
+    limit_0_15 = 0x4800
+    limit_and_flag =0x40 
+    access_byte = 0xF2
+    full GDT entry in hex = 0x4800000080F24000
+
+3.
+CS = 000000000011011 = 0x1B
+EIP = 0x0
+SS = 0000000000100011 = 0x23
+ESP = 0x37FF
